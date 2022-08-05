@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Medical App</h1>
+
+    <div class="container">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal">
+            Add
+        </button>
+        <button type="button" class="btn btn-primary">
+            Refresh
+        </button>
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#updateModal">
+            Update
+        </button>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+            Delete
+        </button>
+    </div>
+
+    <!-- Add Modal -->
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add medical details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="mb-3">
+                                <label for="col1" class="form-label">Gender</label>
+                                <input type="text" class="form-control" id="col1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text"></div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="col2" class="form-label">Months of Part D
+                                    Enrollment</label>
+                                <input type="text" class="form-control" id="col2">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="col3" class="form-label">Under 65</label>
+                                <input type="text" class="form-control" id="col3">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="col4" class="form-label">65 - 69</label>
+                                <input type="text" class="form-control" id="col4">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="col5" class="form-label">70 - 74</label>
+                                <input type="text" class="form-control" id="col5">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="col6" class="form-label">75 - 79</label>
+                                <input type="text" class="form-control" id="col6">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="col7" class="form-label">80 - 84</label>
+                                <input type="text" class="form-control" id="col7">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="col8" class="form-label">85 and Older</label>
+                                <input type="text" class="form-control" id="col8">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="col9" class="form-label">Total</label>
+                                <input type="text" class="form-control" id="col9">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Update Modal -->
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add medical details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="mb-3">
+                                <label for="col0" class="form-label">Item ID</label>
+                                <input type="text" class="form-control" id="col0" aria-describedby="emailHelp">
+                            </div>
+
+                            <div style="display:none">
+                                <div class="mb-3">
+                                    <label for="col1" class="form-label">Gender</label>
+                                    <input type="text" class="form-control" id="col1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="col2" class="form-label">Months of Part D
+                                        Enrollment</label>
+                                    <input type="text" class="form-control" id="col2">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="col3" class="form-label">Under 65</label>
+                                    <input type="text" class="form-control" id="col3">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="col4" class="form-label">65 - 69</label>
+                                    <input type="text" class="form-control" id="col4">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="col5" class="form-label">70 - 74</label>
+                                    <input type="text" class="form-control" id="col5">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="col6" class="form-label">75 - 79</label>
+                                    <input type="text" class="form-control" id="col6">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="col7" class="form-label">80 - 84</label>
+                                    <input type="text" class="form-control" id="col7">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="col8" class="form-label">85 and Older</label>
+                                    <input type="text" class="form-control" id="col8">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="col9" class="form-label">Total</label>
+                                    <input type="text" class="form-control" id="col9">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete medical details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="mb-3">
+                                <label for="col1" class="form-label">Item ID</label>
+                                <input type="text" class="form-control" id="col1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container"  style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);border-radius:10px">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Gender</th>
+                    <th>Months of Part D Enrollment</th>
+                    <th>Under 65</th>
+                    <th>65 - 69</th>
+                    <th>70 - 74</th>
+                    <th>75 - 79</th>
+                    <th>80 - 84</th>
+                    <th>85 and Older</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1111</td>
+                    <td>Female</td>
+                    <td>12 Months</td>
+                    <td> 1828</td>
+                    <td>1929</td>
+                    <td>2828</td>
+                    <td>4544</td>
+                    <td>3445</td>
+                    <td>4556</td>
+                    <td>4566s</td>
+                </tr>
+
+                <tr>
+                    <td>1112</td>
+                    <td>Female</td>
+                    <td>12 Months</td>
+                    <td> 1828</td>
+                    <td>1929</td>
+                    <td>2828</td>
+                    <td>4544</td>
+                    <td>3445</td>
+                    <td>4556</td>
+                    <td>4566s</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
